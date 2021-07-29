@@ -6,11 +6,14 @@ import (
 	"os"
 	"os/exec"
 	"syscall"
+
+	"github.com/taybart/log"
 )
 
 func main() {
+
 	if len(os.Args) <= 1 {
-		fmt.Println("Usage: lnch <command> <optional parameters>")
+		fmt.Println("Usage: launch <command> <optional parameters>")
 		os.Exit(1)
 	}
 	cmd := exec.Command(os.Args[1], os.Args[2:]...)
