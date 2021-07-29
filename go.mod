@@ -4,5 +4,6 @@ go 1.16
 
 require (
 	github.com/taybart/args v0.0.0-20210719011915-cab6d092992f
+	github.com/taybart/env v0.0.1
 	github.com/taybart/log v1.4.1
 )
